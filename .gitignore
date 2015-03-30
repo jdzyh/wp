@@ -1,0 +1,14 @@
+# not include c# learning program
+/0.c_sharp_test
+
+/**/bin/
+/**/obj/
+
+*.csproj
+*.appxmanifest
+*.sln
+*.suo
+*.user
+*.intermediate
+*.appx
+*.appxsym
