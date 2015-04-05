@@ -67,6 +67,9 @@ namespace _11.ManagingState
         /// session.  The state will be null the first time a page is visited.</param>
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            /*
+             * 通过 e 传递参数
+             */
             if (e.PageState != null && e.PageState.ContainsKey("value")) {
                 valueTextbox.Text = e.PageState["value"].ToString();
             }
@@ -83,6 +86,9 @@ namespace _11.ManagingState
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
             // another way to save the app infos that's used last time.
+            /*
+             * 将代传递参数保存到 e 
+             */
             e.PageState["value"] = valueTextbox.Text;
         }
 
